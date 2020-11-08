@@ -147,7 +147,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Programming_Assignment_4_Self_Organizing_List.cpp" />
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="book.h" />
+    <ClInclude Include="CountSelfOrderedList.h" />
+    <ClInclude Include="link.h" />
+    <ClInclude Include="SelfOrderedList.h" />
+    <ClInclude Include="SelfOrderedListADT.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
