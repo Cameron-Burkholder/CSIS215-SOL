@@ -65,12 +65,7 @@ private:
         }
         delete head;
     }
-
-protected:
-
-    // These should be overridden in each implementation
     void updateList(Link<E>* el) {
-        //new
         Link<E>* temp = el->prev;
         el->count++;
         while (temp != head && el->count > temp->count) {

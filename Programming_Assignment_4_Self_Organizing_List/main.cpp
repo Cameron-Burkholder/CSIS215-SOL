@@ -3,6 +3,8 @@
 
 #include <iostream>
 #include "CountSelfOrderedList.h"
+#include "MoveToFrontSelfOrderedList.h"
+#include "TransposeSelfOrderedList.h"
 
 int main() {
 
@@ -27,6 +29,35 @@ int main() {
     std::cout << "Compares: " << clist->getCompares() << std::endl;
     clist->printlist();
 
+    std::cout << std::endl << std::endl;
+
+    std::cout << "MOVE TO FRONT HEURISTIC" << std::endl;
+    std::cout << "Chars" << std::endl;
+    MoveToFrontSelfOrderedList<char>* mtflist = new MoveToFrontSelfOrderedList<char>();
+    for (int i = 0; i < addsLength; i++) {
+        mtflist->add(adds[i]);
+    }
+    for (int i = 0; i < findsLength; i++) {
+        mtflist->find(finds[i]);
+    }
+    std::cout << "Size: " << mtflist->size() << std::endl;
+    std::cout << "Compares: " << mtflist->getCompares() << std::endl;
+    mtflist->printlist();
+
+    std::cout << std::endl << std::endl; 
+
+    std::cout << "TRANSPOSE HEURISTIC" << std::endl; 
+    std::cout << "Chars" << std::endl;
+    TransposeSelfOrderedList<char>* tlist = new TransposeSelfOrderedList<char>();
+    for (int i = 0; i < addsLength; i++) {
+        tlist->add(adds[i]);
+    }
+    for (int i = 0; i < findsLength; i++) {
+        tlist->find(finds[i]);
+    }
+    std::cout << "Size: " << tlist->size() << std::endl;
+    std::cout << "Compares: " << tlist->getCompares() << std::endl;
+    tlist->printlist();
 
     system("pause");
     return 0;

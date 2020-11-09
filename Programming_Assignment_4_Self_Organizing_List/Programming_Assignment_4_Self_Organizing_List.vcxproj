@@ -153,8 +153,10 @@
     <ClInclude Include="book.h" />
     <ClInclude Include="CountSelfOrderedList.h" />
     <ClInclude Include="link.h" />
+    <ClInclude Include="MoveToFrontSelfOrderedList.h" />
     <ClInclude Include="SelfOrderedList.h" />
     <ClInclude Include="SelfOrderedListADT.h" />
+    <ClInclude Include="TransposeSelfOrderedList.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
